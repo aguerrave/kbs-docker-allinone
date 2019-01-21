@@ -1,0 +1,7 @@
+[submodule "kbs-haproxy"]
+	path = kbs-haproxy
+	url = https://github.com/longnan/kbs-haproxy.git
+	branch = kbs-default
+[submodule "kbs-portainer"]
+	path = kbs-portainer
+	url = https://github.com/longnan/kbs-portainer.git
