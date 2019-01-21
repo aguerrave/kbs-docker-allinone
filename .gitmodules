@@ -5,3 +5,12 @@
 [submodule "kbs-portainer"]
 	path = kbs-portainer
 	url = https://github.com/longnan/kbs-portainer.git
+[submodule "kbs-pgsingle"]
+	path = kbs-pgsingle
+	url = https://github.com/longnan/kbs-pgsingle.git
+[submodule "kbs-pgseed"]
+	path = kbs-pgseed
+	url = https://github.com/longnan/kbs-pgseed.git
+[submodule "kbs-pgmigrator"]
+	path = kbs-pgmigrator
+	url = https://github.com/longnan/kbs-pgmigrator.git
