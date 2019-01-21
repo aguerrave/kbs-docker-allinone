@@ -14,3 +14,12 @@
 [submodule "kbs-pgmigrator"]
 	path = kbs-pgmigrator
 	url = https://github.com/longnan/kbs-pgmigrator.git
+[submodule "kbs-pgweb"]
+	path = kbs-pgweb
+	url = https://github.com/longnan/kbs-pgweb.git
+[submodule "kbs-server"]
+	path = kbs-server
+	url = https://github.com/longnan/kbs-server.git
+[submodule "kbs-openldap"]
+	path = kbs-openldap
+	url = https://github.com/longnan/kbs-openldap.git
