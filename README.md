@@ -1,7 +1,7 @@
 # KBS Docker All-in-One Suite
 The all-in-one package to run KBS-iDempiere in Docker
 
-# Install, Uninstall and Update
+# How to Install, Uninstall and Update KBS-iDempiere Docker
 * Install KBS: 
     * `kbs-setup.bat|sh`
 * Uninstall KBS: 
