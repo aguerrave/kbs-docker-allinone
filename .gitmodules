@@ -20,3 +20,6 @@
 [submodule "kbs-server"]
 	path = kbs-server
 	url = https://github.com/longnan/kbs-server.git
+[submodule "kbs-openldap"]
+	path = kbs-openldap
+	url = https://github.com/longnan/kbs-openldap.git
