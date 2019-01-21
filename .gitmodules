@@ -23,3 +23,6 @@
 [submodule "kbs-openldap"]
 	path = kbs-openldap
 	url = https://github.com/longnan/kbs-openldap.git
+[submodule "kbs-pgbackupper"]
+	path = kbs-pgbackupper
+	url = https://github.com/longnan/kbs-pgbackupper.git
