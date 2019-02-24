@@ -26,6 +26,8 @@ docker-compose -f kbs-portainer/docker-compose.yml build
 docker-compose -f kbs-pgsingle/docker-compose.yml build
 docker-compose -f kbs-pgseed/docker-compose.yml build
 docker-compose -f kbs-pgmigrator/docker-compose.yml build
+docker-compose -f kbs-pgbackupper/docker-compose.yml build
+docker-compose -f kbs-pgweb/docker-compose.yml build
 docker-compose -f kbs-server/docker-compose.yml build
 
 REM ######################################################
@@ -44,6 +46,9 @@ REM ###### waiting 60s to complete seed import
 ping -n 60 127.1 >nul
 
 docker-compose -f kbs-pgmigrator/docker-compose.yml up --force-recreate
+
+docker-compose -f kbs-pgweb/docker-compose.yml up --force-recreate -d
+docker-compose -f kbs-pgbackupper/docker-compose.yml up --force-recreate -d
 
 docker-compose -f kbs-server/docker-compose.yml up --force-recreate -d
 REM ###### waiting 60s to complete start kbs-server

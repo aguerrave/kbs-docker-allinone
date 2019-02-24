@@ -9,6 +9,8 @@ REM ######################################################
 docker-compose -f kbs-server/docker-compose.yml down -v
 docker-compose -f kbs-pgmigrator/docker-compose.yml down -v
 docker-compose -f kbs-pgseed/docker-compose.yml down -v
+docker-compose -f kbs-pgweb/docker-compose.yml down -v
+docker-compose -f kbs-pgbackupper/docker-compose.yml down -v
 docker-compose -f kbs-pgsingle/docker-compose.yml down -v
 docker stop kbs-portainer
 REM docker-compose -f kbs-portainer/docker-compose.yml down -v

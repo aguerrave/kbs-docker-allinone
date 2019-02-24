@@ -8,8 +8,6 @@ The all-in-one package to run KBS-iDempiere in Docker
     * `std-cleanup.bat|sh`
 * Update KBS:
     * `std-update.bat|sh` 
-* Extension:
-    * `ext-*.bat|sh`
 
 # How to Install, Uninstall and Update in Docker Swarm (pro)
 * Prerequirement: KSYS-Cloud
