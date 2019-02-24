@@ -1,13 +1,24 @@
 # KBS Docker All-in-One Suite
 The all-in-one package to run KBS-iDempiere in Docker
 
-# How to Install, Uninstall and Update
+# How to Install, Uninstall and Update in Docker Desktop (std)
 * Install KBS: 
-    * `kbs-setup.bat|sh`
+    * `std-setup.bat|sh` 
 * Uninstall KBS: 
-    * `kbs-cleanup.bat|sh`
+    * `std-cleanup.bat|sh`
 * Update KBS:
-    * `kbs-update.bat|sh` 
+    * `std-update.bat|sh` 
+* Extension:
+    * `ext-*.bat|sh`
+
+# How to Install, Uninstall and Update in Docker Swarm (pro)
+* Prerequirement: KSYS-Cloud
+* Install KBS: 
+    * `pro-setup.bat|sh` 
+* Uninstall KBS: 
+    * `pro-cleanup.bat|sh`
+* Update KBS:
+    * `pro-update.bat|sh` 
 
 ## Usage
 * KBS webui (SuperUser/System) : 
@@ -19,6 +30,12 @@ The all-in-one package to run KBS-iDempiere in Docker
 * KBS AD Interface Service : 
   * [http://localhost/ADInterface/services](http://localhost/ADInterface/services)
 
+* Felix web console : 
+  * In Eclipse (SuperUser/System)
+  * [http://localhost/osgi/system/console](http://localhost/osgi/system/console)
+  * In Karaf (karaf/karaf) : 
+  * [http://localhost/system/console](http://localhost/system/console)
+
 * Portainer (admin/portainer) : 
   * [http://localhost/portainer](http://localhost/portainer)
 
@@ -26,6 +43,7 @@ The all-in-one package to run KBS-iDempiere in Docker
   * [http://localhost/admin?stats](http://localhost/admin?stats)
 
 * PGWeb (pgweb/pgweb) : 
+  * [http://localhost:9090/pgweb](http://localhost:9090/pgweb)
   * [http://localhost/pgweb](http://localhost/pgweb)
 
 * LDAP-phpLdapAdmin (cn=admin,dc=demo,dc=ldap,dc=kylinsystems,dc=com / admin) : 
@@ -36,15 +54,8 @@ The all-in-one package to run KBS-iDempiere in Docker
 * LAM-LDAP Account Manager (admin/admin | master password : lam) : 
   * [http://localhost/lam](http://localhost/lam)
 
-* Felix web console (SuperUser/System) : 
-  * [http://localhost/osgi/system/console](http://localhost/osgi/system/console)
-
-* Karaf web console (karaf/karaf) : 
-  * [http://localhost/system/console](http://localhost/system/console)
-
 * Hawtio Console (karaf/karaf) :
   * [http://localhost/hawtio](http://localhost/hawtio)
 
-## #ToDo
+## ToDo
 * Integrate extend volume-plugin in Swarm mode : [https://rexray.io/](https://rexray.io/)
-* Setup SSL in Haproxy
