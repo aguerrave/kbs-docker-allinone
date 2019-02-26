@@ -61,6 +61,8 @@ FOR /f "tokens=*" %i IN ('docker images -q -f "dangling=true"') DO docker rmi %i
 ```
 # Login with your Docker ID to push and pull images from Docker Hub
 docker login
+Username: longnan
+Password:
 docker push id/imagename:tagname
 ```
 ## KBS Monitoring

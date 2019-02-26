@@ -29,9 +29,9 @@ The all-in-one package to run KBS-iDempiere in Docker
   * [http://localhost/ADInterface/services](http://localhost/ADInterface/services)
 
 * Felix web console : 
-  * In Eclipse (SuperUser/System)
+  * In Eclipse Equinox (SuperUser/System)
   * [http://localhost/osgi/system/console](http://localhost/osgi/system/console)
-  * In Karaf (karaf/karaf) : 
+  * In Apache Karaf (karaf/karaf) : 
   * [http://localhost/system/console](http://localhost/system/console)
 
 * Portainer (admin/portainer) : 
@@ -41,16 +41,7 @@ The all-in-one package to run KBS-iDempiere in Docker
   * [http://localhost/admin?stats](http://localhost/admin?stats)
 
 * PGWeb (pgweb/pgweb) : 
-  * [http://localhost:9090/pgweb](http://localhost:9090/pgweb)
   * [http://localhost/pgweb](http://localhost/pgweb)
-
-* LDAP-phpLdapAdmin (cn=admin,dc=demo,dc=ldap,dc=kylinsystems,dc=com / admin) : 
-  * [http://localhost/phpldapadmin](http://localhost/phpldapadmin)
-
-  * docker exec kbs-openldap ldapsearch -x -H ldap://localhost -b dc=demo,dc=ldap,dc=kylinsystems,dc=com -D "cn=admin,dc=demo,dc=ldap,dc=kylinsystems,dc=com" -w admin
-
-* LAM-LDAP Account Manager (admin/admin | master password : lam) : 
-  * [http://localhost/lam](http://localhost/lam)
 
 * Hawtio Console (karaf/karaf) :
   * [http://localhost/hawtio](http://localhost/hawtio)

@@ -35,7 +35,7 @@ REM Starting...
 REM ######################################################
 docker-compose -f kbs-haproxy/docker-compose.yml up --force-recreate -d
 
-docker run --restart=always -d -p 9000:9000 --name=kbs-portainer --network=kbs_network -v /var/run/docker.sock:/var/run/docker.sock -v kbs_portainer_data:/data portainer/portainer:1.20.0
+docker run --restart=always -d -p 9000:9000 --name=kbs-portainer --network=kbs_network -v /var/run/docker.sock:/var/run/docker.sock -v kbs_portainer_data:/data portainer/portainer:1.20.1
 REM docker-compose -f kbs-portainer/docker-compose.yml up --force-recreate -d
 
 docker-compose -f kbs-pgsingle/docker-compose.yml up --force-recreate -d
@@ -48,7 +48,8 @@ ping -n 60 127.1 >nul
 docker-compose -f kbs-pgmigrator/docker-compose.yml up --force-recreate
 
 docker-compose -f kbs-pgweb/docker-compose.yml up --force-recreate -d
-docker-compose -f kbs-pgbackupper/docker-compose.yml up --force-recreate -d
+
+REM docker-compose -f kbs-pgbackupper/docker-compose.yml up --force-recreate -d
 
 docker-compose -f kbs-server/docker-compose.yml up --force-recreate -d
 REM ###### waiting 60s to complete start kbs-server
